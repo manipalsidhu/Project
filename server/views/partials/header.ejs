@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel='stylesheet' href='/Content/Style.css' />
+  <link rel="icon" type="image/x-icon" href="images/webexperts.ico">
+
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <h4><img src="images/logo1.png" alt="logo" style=" height: 80px;"> Surveys</h4>
+    </div>
+    <ul class="nav-links">
+
+      <% if (title == "Home"){ %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/home"><i class="fas fa-home"></i> Home </a>
+        </li>
+
+        <% if (title == "Surveys") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/surveys"><i class="fas fa-poll"></i> Surveys </a>
+        </li>
+
+        <% if (title == "About") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/about"><i class="fas fa-user-tie"></i> About Us </a>
+        </li>  
+        
+        <% if (title == "Contact") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/contact"><i class="fas fa-id-card-alt"></i> Contact Us </a>
+        </li>
+  </nav>
+
+
+  <!-- Main Navigation
+  <nav class="navbar navbar-expand-lg navbar-light bg-white"> -->
+    <!-- <a class="navbar-brand" href="/"><img src="images/logo1.png" alt="WebExperts Logo">
+        Surveys</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+  
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <% if (title == "Home"){ %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/home"><i class="fas fa-home"></i> Home </a>
+        </li>
+
+        <% if (title == "Surveys") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/surveys"><i class="fas fa-poll"></i> Surveys </a>
+        </li>
+
+        <% if (title == "About") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/about"><i class="fas fa-user-tie"></i> About Us </a>
+        </li>  
+        
+        <% if (title == "Contact") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/contact"><i class="fas fa-id-card-alt"></i> Contact Us </a>
+        </li>
+    </div>
+  </nav> -->
